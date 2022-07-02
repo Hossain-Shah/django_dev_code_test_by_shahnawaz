@@ -1,0 +1,10 @@
+Hello {{request.user.username}} !! <br><br>
+Balance: {{balance}}
+<a href="{% url 'logout' %}">logout</a>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="text" name="username" placeholder="Enter Username">
+    <input type="text" name="amount" placeholder="Enter Amount">
+    <input type="submit" value="Submit">
+    </form>

@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "f786a3ad-63ed-4743-98a9-039cbd2fc069",
+		"name": "collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14422741"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/balance-transfer/registration-login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "Gobindo",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "GOtohelll123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/balance-transfer/registration-login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"balance-transfer",
+						"registration-login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/balance-transfer/user-balance/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/balance-transfer/user-balance/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"balance-transfer",
+						"user-balance",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
